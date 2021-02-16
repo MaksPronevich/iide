@@ -1,0 +1,29 @@
+<nav class="left-menu">
+    <ul>
+        <li>
+            <a @@if (context.page === 'sopiipup-info'){class='left-menu__active-item'} href="sopiipup-info.html">
+                <i class="fa fa-info-circle"></i> 
+                Общая информация
+            </a>
+        </li>
+        <li>
+            <a @@if (context.page === 'sopiipup-structure'){class='left-menu__active-item'} href="sopiipup-structure.html">
+                <i class="fa fa-sitemap"></i>
+                Структура
+            </a>
+        </li>
+        <li>
+            <a @@if (context.page === 'sopiipup-staff'){class='left-menu__active-item'} href="sopiipup-staff.html">
+                <i class="fa fa-user"></i> 
+                Сотрудники
+            </a>
+        </li>
+        <li>
+            <a  @@if (context.page === 'sopiipup-developments'){class='left-menu__active-item'} href="sopiipup-developments.html">
+                <i class="fa fa-code"></i>
+                Разработки
+            </a>
+        </li>
+        
+    </ul>
+</nav>

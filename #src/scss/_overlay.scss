@@ -1,0 +1,158 @@
+.overlay__btn {
+    position: fixed;
+    left: 15px;
+    top: 25px;
+    cursor: pointer;
+    background: $green;
+    box-sizing: border-box;
+    background-clip: content-box;
+    width: 30px;
+    height: 24px;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    transition: all 0.25s ease-in-out;
+    z-index: 4;
+    
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        background: $green;
+        height: 2px;
+        width: 100%;
+        right: 0;
+        will-change: rotate;
+        transition: all 0.5s ease;
+    }
+
+    &:before {
+        top: -10px;
+    }
+
+    &:after {
+        bottom: -10px;
+        width: 100%;
+    }
+
+    &.active {
+        background: transparent;
+        background-clip: content-box;
+    }
+
+    &.active:before {
+        transform: rotate(135deg);
+        top: 0;
+        background: $green;
+        width: 110%;
+    }
+    
+    &.active:after {
+        bottom: 0;
+        transform: rotate(-135deg);
+        background: $green;
+        width: 110%;
+    }
+
+    @media (max-width: $xl) {
+        top: 18px;
+    }  
+}
+
+.overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: left top;
+    transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    overflow-y: auto;
+    z-index: 2;
+
+    &.open {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.overlay-nav {
+    margin-top: 50px;
+}
+
+.overlay-nav__item {
+    padding-bottom: 50px;
+
+    h2 {
+        font-size: 22px;
+        color: $green;
+        text-transform: uppercase;
+        user-select: none;
+
+        @media (max-width: $xl) {
+           font-size: 18px;
+        } 
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            li {
+                a {
+                    display: inline-block;
+                    padding: 5px 0px;
+                    color: $white;
+        
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-nav-overlay {
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+
+            li {
+                a {
+                    color: $green;
+                    font-size: 18px;
+                    padding: 2px 0px;
+                    text-transform: uppercase;
+        
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        } 
+    } 
+    
+
+    @media (max-width: $xl) {
+        margin-left: 20px;
+    }
+
+    @media (max-width: $sm) {
+        margin-left: 35px;
+    } 
+}
+
+.block-none {
+    @media (min-width: $lg) {
+        display: none;
+    }
+
+    @media (max-width: $lg) {
+        display: block;
+    } 
+}

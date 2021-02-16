@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('common_files/_head.html', {
+        "title": "Обучающимся"
+    })
+
+<body >
+    @@include('common_files/_header.html', {
+        context: {
+            "page": "for-learners"
+        }
+    })
+
+    <main>
+        <section class="center-menu-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-titles">
+                            <h3>Обучающимся</h3>
+                            <div class="ln"></div>
+                            <h4>Выберите интересующий вас раздел</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="center-menu">
+                            <ul>
+                                <li><a href="for-students.html">Студентам</a></li>
+                                <li><a href="for-masters.html">Магистрантам</a></li>
+                                <li><a href="for-postgraduate-students.html">Аспирантам</a></li>
+                                <li><a href="for-international-students.html">Иностранным обучающимся</a></li>
+                            </ul>  
+                        </nav>     
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="center-menu-arrow"> 
+                            <img src="img/arrow-top.png" alt="arrow-top">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="center-menu-descr">
+                            <p>Всю необходимую информацию для обучающихся можно найти выбрав необходимый раздел</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('common_files/_footer.html')
+
+    @@include('common_files/_overlay.html')
+
+    <!-- scripts -->
+    <script src="js/app.min.js"></script>
+    
+</body>
+</html>

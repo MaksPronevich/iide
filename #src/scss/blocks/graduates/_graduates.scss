@@ -1,0 +1,32 @@
+.graduates {
+    margin-bottom: 60px;
+}
+
+.graduates__item {
+    padding: 15px;
+    margin: 30px 0px;
+
+    &:nth-child(1) {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:nth-child(odd) {
+        background-color: $gray-medium;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 16px;
+        color: $green;
+        margin-bottom: 10px;
+    }
+    
+    @media (max-width: $lg) {
+        text-align: center;
+        margin: 30px auto;
+    } 
+}

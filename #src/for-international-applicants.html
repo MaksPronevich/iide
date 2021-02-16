@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('common_files/_head.html', {
+"title": "Иностранным абитуриентам"
+})
+
+<body>
+    @@include('common_files/_header.html', {
+    context: {
+    "page": "for-applicants"
+    }
+    })
+
+    <main>
+        <section class="for-applicants">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-titles section-titles--mod">
+                            <h3>Абитуриентам</h3>
+                            <div class="ln"></div>
+                            <h4>Иностранным абитуриентам</h4>
+                            <a href="for-applicants.html" class="exit-arrow">
+                                <i class="fa fa fa-arrow-circle-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="for-applicants-content">
+                            <div class="for-applicants-wrap">
+                                <div class="for-applicants__item">
+                                    <h3>Материалы и дополнительная информация</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="documents/admission/international/Documents.docx"
+                                                class="basic-link" download>
+                                                <i class="fa fa-download"></i>
+                                                Документы
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="documents/admission/international/Visa_requirements.docx"
+                                                class="basic-link" download>
+                                                <i class="fa fa-download"></i>
+                                                Требования к VISA
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    @@include('common_files/_footer.html')
+
+    @@include('common_files/_overlay.html')
+
+    <!-- scripts -->
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

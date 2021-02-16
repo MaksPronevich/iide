@@ -1,0 +1,54 @@
+table {
+    display: block;
+    width: auto;
+    overflow-x: auto;
+    margin-top: 20px;
+
+    &.table-deanery {
+        margin-top: 0;
+    }
+    
+    h3 {
+        font-size: 18px;
+        color: $green;
+        margin: 0;
+        padding: 10px 0px;
+        font-weight: 600;
+    }  
+
+    h4 {
+        font-size: 15px;
+        color: $black;
+        font-weight: 600;
+    }
+   
+    tr {
+        border: 1px solid $black;
+        padding: 5px;
+
+        td {
+            border: 1px solid $black;
+            padding: 5px;
+            text-align: center;
+
+            ol {
+                text-align: left;
+                margin: 0;
+
+                li {
+                    margin-left: 15px;
+                }
+            }
+
+            ul {
+                list-style: none;
+                text-align: left;
+                margin: 0;
+
+                li {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

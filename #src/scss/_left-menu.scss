@@ -1,0 +1,106 @@
+.left-menu {
+    position: fixed;
+    width: 50px;
+    top: 30%;
+    left: 0;
+    background-color: $gray;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px $black;
+    transition: .3s linear;
+    z-index: 1;
+
+    ul {
+        margin: 0;
+        list-style: none;
+
+        li {
+            a {
+                width: 350px;
+                padding: 10px 10px 10px 15px;
+                display: inline-block;
+                color: $white;
+        
+                i {
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 30px;
+                }
+        
+                &:hover {
+                    background-color: $green;
+                    color: $white;
+                }
+        
+                &.left-menu__active-item {
+                    background-color: $green;
+                }   
+            }
+        }
+    }
+
+    &:hover {
+        width:350px;       
+    }
+    
+    @media (max-width: $xl) {
+        display: none;
+    } 
+}
+
+.left-menu-wrap--mod {
+    position: relative;
+    display: none;
+
+    &:hover {
+        .left-menu--mod {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    @media (max-width: $xl) {
+        display: block;
+    } 
+}
+
+.left-menu--mod {
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 100%;
+    width: 100%;
+    margin-top: 10px;
+    background-color: $gray;
+    color: $white;
+    box-shadow: 0px 0px 10px $black;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+
+    ul {
+        margin: 0;
+        list-style: none;
+        
+        li {
+            a {
+                display: block;
+                color: $white;
+                font-size: 15px;
+                padding: 8px;
+        
+                &:hover {
+                    background-color: $green;
+                    color: $white;
+                }
+        
+                &.left-menu__active-item--mod {
+                    background-color: $green;
+                }
+            }
+        }
+    }
+}

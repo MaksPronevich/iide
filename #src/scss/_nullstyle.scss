@@ -1,0 +1,49 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: $green;
+    text-decoration: none;
+    transition: .2s linear;
+    
+
+    &:hover {
+        text-decoration: none;
+        color: $green;
+    }
+}
+
+main {
+    display: block;
+    padding-top: 70px;
+    min-height: calc(100vh - 120px);
+
+    @media (max-width: $xl) {
+        padding-top: 60px;
+    }
+}
+
+

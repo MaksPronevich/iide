@@ -1,0 +1,48 @@
+.news-page {
+    margin: 35px 0px;
+}
+
+.news-page__header {
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 20px;
+
+        @media (max-width: $sm) {
+            font-size: 22px;
+        } 
+    }
+}
+
+.news-page__body {
+
+    img {
+        margin: 20px 0px;
+    }
+    
+}
+
+.news-item-info-page {
+    font-size: 16px;
+}
+
+.news-page__footer {
+
+    .hashtags {
+
+        a {
+            display: inline-block;
+            background-color: $gray-medium;
+            color: $black;
+            font-size: 13px;
+            padding: 5px 8px;
+            transition: .2s linear;
+            margin: 10px 5px 0px;
+
+            &:hover {
+                background-color: $green;
+                color: $white;
+            }
+        }
+    }
+}

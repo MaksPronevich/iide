@@ -1,0 +1,43 @@
+.institute-history {
+    &:before {
+        display: block;
+        content: "";
+        height: 100px;
+        margin: -100px 0 0;
+    }
+}
+
+.institute-history-wrap {
+    background-color: $gray-light;
+}
+
+.institute-history-content {
+    margin-bottom: 20px;
+}
+
+.institute-history-item {
+    padding: 15px;
+    margin-bottom: 15px;
+
+    h4 {
+        color: $green;
+        font-weight: 700;
+        font-size: 16px;
+
+        @media (max-width: $md) {
+            padding-right: 20px;
+        }
+
+        @media (max-width: $sm) {
+           margin-bottom: 10px;
+        }
+    }
+
+    &:nth-child(odd) {
+        background-color: $gray-medium;
+    }
+
+    @media (max-width: $lg) {
+        text-align: center;
+    } 
+}

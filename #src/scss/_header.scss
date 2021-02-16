@@ -1,0 +1,140 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $gray;
+    padding: 10px 0px;
+    z-index: 2;
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    a {
+        margin-left: 25px;
+
+        @media (max-width: $xl) {
+            margin-left: 10px;
+        } 
+
+        @media (max-width: $lg) {
+           margin: 0px 10px;
+        }  
+ 
+        img {
+            width: 50px;
+
+            @media (max-width: $xl) {
+                width: 40px;
+            }
+        }
+    }
+
+    @media (max-width: $xl) {
+        justify-content: flex-end;
+    }  
+    
+    @media (max-width: $lg) {
+        justify-content: center;
+    }  
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    list-style: none;
+    
+    li {
+        
+        a {
+            display: inline-block;
+            font-size: 16px;
+            color: $white;
+            font-weight: 700;
+            text-transform: uppercase;
+    
+            &:hover {
+                color: $green;
+            }
+        }
+
+        &.header-nav__active-item {
+            a {
+                color: $green;
+            }
+        }
+    }
+    
+    @media (max-width: $lg) {
+        display: none;
+    } 
+}
+
+.header-user {
+    text-align: center;
+
+    a {
+        i {
+            color: $white;
+            font-size: 25px;
+            border-radius: 50%;
+        }
+    }
+
+    @media (max-width: $lg) {
+        display: none;
+    }  
+}
+
+.header-user-menu {
+    text-align: left;
+    margin-top: 10px;
+
+    @media (max-width: $lg) {
+        display: block;
+    }  
+}
+
+.header-lang {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        img {
+            width: 30px;
+
+            @media (max-width: $xl) {
+                width: 25px;
+            }    
+        } 
+    }
+
+    @media (max-width: $lg) {
+        display: none;
+    }  
+}
+
+.header-lang-menu {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+
+    a {
+        img {
+            @media (max-width: $lg) {
+                width: 30px;
+            } 
+        }
+
+        @media (max-width: $xl) {
+            margin: 0px 2px;
+        }
+    }  
+    
+    @media (max-width: $lg) {
+        display: flex;
+    }    
+}

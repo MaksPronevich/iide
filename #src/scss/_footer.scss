@@ -1,0 +1,32 @@
+footer {
+    background-color: $gray;
+    padding: 10px 0px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    a {
+        margin: 0px 2px;
+    }
+
+    @media (max-width: $lg) {
+        margin: 5px 0px;
+    } 
+}
+
+.footer-text {
+    text-align: center;
+    color: $white;
+    margin-top: 10px;
+
+    h3 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}

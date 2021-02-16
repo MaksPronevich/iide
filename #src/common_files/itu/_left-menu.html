@@ -1,0 +1,34 @@
+<nav class="left-menu">
+    <ul>
+        <li>
+            <a @@if (context.page === 'itu-info'){class='left-menu__active-item'} href="itu-info.html">
+                <i class="fa fa-info-circle"></i> 
+                Общая информация
+            </a>
+        </li>
+        <li>
+            <a @@if (context.page === 'itu-specialtys'){class='left-menu__active-item'} href="itu-specialtys.html">
+                <i class="fa fa-cubes"></i> 
+                Специальности
+            </a>
+        </li>
+        <li>
+            <a @@if (context.page === 'itu-staff'){class='left-menu__active-item'} href="itu-staff.html">
+                <i class="fa fa-user"></i> 
+                Сотрудники и совместители
+            </a>
+        </li>
+        <li>
+            <a  @@if (context.page === 'itu-researchwork'){class='left-menu__active-item'} href="itu-researchwork.html">
+                <i class="fa fa-flask"></i> 
+                Научно-исследовательская работа
+            </a>
+        </li>
+        <li>
+            <a  @@if (context.page === 'itu-plan'){class='left-menu__active-item'} href="itu-plan.html">
+                <i class="fa fa-file-text"></i> 
+                План заседания кафедры
+            </a>
+        </li>
+    </ul>
+</nav>

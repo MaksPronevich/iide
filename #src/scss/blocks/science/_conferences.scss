@@ -1,0 +1,255 @@
+.science-conferences {
+
+    &:before {
+        display: block;
+        content: "";
+        height: 100px;
+        margin: -100px 0 0;
+    }
+}
+.science-conferences-wrap {
+    background-color: $gray-light;
+}
+
+.science-conferences-content {
+    margin-bottom: 40px;
+
+    ul {
+        li {
+            margin: 0px 0px 10px 15px;
+
+            a {
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+.conferences-content {
+    margin-bottom: 40px;
+}
+
+.tabs__items {
+    display: flex;
+    justify-content: center;
+
+    a {
+        text-align: center;
+        font-size: 15px;
+        color: $white;
+        background-color: $gray;
+        padding: 10px;
+        transition: .2s linear;
+        
+        &.active {
+            background-color: $green;
+            color: $white;
+            box-shadow: 0px 0px 5px $green;
+        }
+
+        &:hover {
+            background-color: $green;   
+            color: $white;
+        }
+
+        @media (max-width: $lg) {
+            padding: 5px 10px;
+        }
+    }
+
+    @media (max-width: $lg) {
+        flex-direction: column;
+    }
+}
+
+.tabs__block {
+    
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+}
+
+.conferences-wrap {
+    padding: 25px;
+    border: 1px solid $green;
+    margin: 20px 0px 30px;
+
+    .conferences-descr {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 30px 0px;
+        
+        p {
+            width: 60%;
+
+            @media (max-width: $sm) {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        img {
+            width: 200px;
+        }
+    }
+
+    h3 {
+        font-size: 18px;
+        color: $green;
+        font-weight: 700;
+        margin: 20px 0px 10px;
+    }
+
+    h4 {
+        font-size: 18px;
+        color: $black;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+
+    .underline-link {
+        display: inline-block;
+        position: relative;
+    
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            border-bottom: 2px solid $green; 
+            transition: .5s;
+        }
+          
+        &:hover:before {
+            width: 100%;
+        }
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    ol, ul {
+        li {
+            margin: 0px 0px 5px 15px;
+
+            span {
+                color: $green;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .conferences-img {
+        margin: 0 auto;
+    }
+
+    @media (max-width: $sm) {
+        padding: 10px;
+    }
+}
+
+.form-conferences {
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+
+    .form-subtitle {
+        margin-bottom: 8px;
+        color: $green;
+        font-weight: 600;
+    }
+
+    .radio-wrap {
+        input {
+            display: inline;
+            width: auto;
+        }
+
+        label {
+            font-weight: normal;
+            color: inherit;
+        }
+    }
+
+    label {
+        width: 100%;
+        margin-top: 20px;
+        color: $green;
+        font-weight: 600;
+
+        @media (max-width: $sm) {
+            margin-top: 10px;
+        }
+    }
+   
+    input, textarea {
+        display: block;
+        margin-top: 8px;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        color: $black;
+        outline: none;
+        border: 2px solid $gray-medium;
+
+        &:hover {
+            border: 2px solid $green;
+        }
+
+        &:focus {
+            border: 2px solid $green;
+            box-shadow: 0px 0px 5px $green;
+        }
+
+        &.radio {
+            display: inline;
+            margin-top: 0;
+            width: auto;
+        }
+    }
+
+    textarea {
+        height: 45px;
+    }
+
+    button {
+        border: none;
+        outline: none;
+        background-color: $green;
+        color: $white;
+        padding: 8px 12px;
+        transition: 0.2s linear;
+        border: 1px solid $green;
+        font-weight: 700;
+        margin-top: 15px;
+
+        &:hover {
+            background-color: $white;
+            color: $green;
+            box-shadow: 0px 0px 5px $green;
+            border: 1px solid $green;
+        }
+    }
+
+    @media (max-width: $sm) {
+        width: 100%;
+    }
+}
+
+
+
+
+ 
+
+

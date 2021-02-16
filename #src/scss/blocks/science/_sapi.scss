@@ -1,0 +1,77 @@
+.science-sapi {
+
+    &:before {
+        display: block;
+        content: "";
+        height: 100px;
+        margin: -100px 0 0;
+    }
+}   
+
+.science-sapi-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.science-sapi-description {
+    width: 70%;
+
+    h3 {
+        font-size: 16px;
+        color: $green;
+        font-weight: 700;
+    }
+
+    ul {
+        
+
+        li {
+            margin-left: 15px;
+        }
+    }
+
+    h4 {
+        color: $black;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    @media (max-width: $lg) {
+        width: 100%;
+    } 
+
+    a {
+        display: inline-block;
+        position: relative;
+        color: $green;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            border-bottom: 2px solid $green; 
+            transition: .5s;
+        }
+          
+        &:hover:before {
+            width: 100%;
+        }
+    }
+}
+
+.science-sapi-img {
+   
+    @media (max-width: $lg) {
+        margin-top: 30px;  
+    } 
+
+    @media (max-width: $sm) {
+        margin: 30px auto 0px;   
+    } 
+}

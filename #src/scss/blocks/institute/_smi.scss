@@ -1,0 +1,72 @@
+.institute-smi {
+    &:before {
+        display: block;
+        content: "";
+        height: 100px;
+        margin: -100px 0 0;
+    }
+}
+
+.institute-smi-wrap {
+    background-color: $gray-light;
+}
+
+.institute-smi-content {
+    margin-bottom: 40px;
+
+    h2 {
+        font-size: 18px;
+        color: $green;
+        font-weight: 700;
+    }
+}
+
+.smi-img {
+    text-align: center;
+
+    img {
+        border: 1px solid $gray;
+
+        @media (max-width: $lg) {
+            margin: 10px auto 25px;
+        } 
+    }
+}
+
+.smi-description {
+    margin-bottom: 40px;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: $black;
+    }
+    
+    a {
+        display: inline-block;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            border-bottom: 2px solid $green; 
+            transition: .5s;
+        }
+        
+        &:hover:before {
+            width: 100%;
+        }
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    @media (max-width: $lg) {
+        margin-bottom: 0;
+    } 
+} 

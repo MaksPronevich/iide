@@ -1,0 +1,32 @@
+.developments-content {
+
+    .developments-content__item {
+        margin-bottom: 70px;
+
+        h2 {
+            text-align: center; 
+            font-size: 22px;
+            color: $green;
+            font-weight: 700;
+        }
+
+        img {
+            margin: 30px auto;
+            border: 1px solid $gray;
+
+            @media (max-width: $sm) {
+                margin: 15px auto;
+            }
+        }
+
+        ul {
+            li {
+                margin-left: 15px;
+            }
+        }
+
+        @media (max-width: $sm) {
+            margin-bottom: 40px;
+        }
+    } 
+}

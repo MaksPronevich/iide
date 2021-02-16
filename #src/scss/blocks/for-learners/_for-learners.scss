@@ -1,0 +1,107 @@
+.for-learners-content {
+
+    h3 {
+        font-size: 18px;
+        color: $green;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+
+.accordion-wrap {
+    width: 75%;
+    margin: 40px auto;
+
+    @media (max-width: $xl) {
+        width: 100%;
+    } 
+}
+
+
+.accordion__title {
+    position: relative;
+    background-color: $gray-medium;
+    padding: 15px 10px;
+    margin: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    user-select: none;
+    cursor: pointer;
+    
+    h2 {
+        font-size: 16px;
+        color: $black;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    span {
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%) rotate(0deg);
+        transition: all .2s linear;
+
+        &:after,
+        &:before {
+            content: "";
+            display: inline-block;
+            height: 3px;
+            width: 8px;
+            background-color: $black;
+            transform: rotate(-130deg);
+        }
+
+        &:after {
+            transform: rotate(130deg);
+        }
+
+        &:before {
+            margin-right: -5px;
+            transform: rotate(-130deg);
+        }
+
+        &.active {
+            transform: translateY(-25%) rotate(180deg);
+        }
+    }
+
+    &:hover, 
+    &.active {
+        box-shadow: 0px 0px 3px $gray;
+        transition: all 0.1s linear;
+    }
+}
+
+.accordion__body {
+    margin: 10px 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+.accordion__links {
+    padding: 10px 20px;
+    margin: auto 0px;
+
+    h4 {
+        font-size: 16px;
+        font-weight: 700;
+        color: $black;
+    }
+
+    a {
+        &.basic-link {
+            display: block;
+            margin-bottom: 5px;
+        } 
+    }
+
+    @media (max-width: $sm) {
+        padding: 10px;
+    } 
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('common_files/_head.html', {
+"title": "Аспирантам"
+})
+
+<body>
+    @@include('common_files/_header.html', {
+    context: {
+    "page": "for-learners"
+    }
+    })
+
+    <main>
+        <section class="for-learners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-titles section-titles--mod">
+                            <h3>Обучающимся</h3>
+                            <div class="ln"></div>
+                            <h4>Аспирантам</h4>
+                            <a href="for-learners.html" class="exit-arrow">
+                                <i class="fa fa fa-arrow-circle-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="for-learners-content">
+                            <h3>Вся необходимая информация для асирантов:</h3>
+                            <div class="accordion-wrap">
+                                <div class="accordion__item">
+                                    <div class="accordion__title">
+                                        <h2>Ссылки на ресурсы</h2>
+                                        <span class="accordion__arrow"></span>
+                                    </div>
+                                    <div class="accordion__body">
+                                        <div class="accordion__links">
+                                            <a href="https://library.bntu.by/" class="basic-link" target="_blank">
+                                                <i class="fa fa-link"></i> Научная библиотека БНТУ
+                                            </a>
+                                            <a href="https://e.bntu.by/" class="basic-link" target="_blank">
+                                                <i class="fa fa-link"></i> Образовательный портал БНТУ
+                                            </a>
+                                            <a href="https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software"
+                                                class="basic-link" target="_blank">
+                                                <i class="fa fa-link"></i> Microsoft Teams
+                                            </a>
+                                            <a href="https://vak.gov.by/" class="basic-link" target="_blank">
+                                                <i class="fa fa-link"></i> Сайт высшей аттестационной комиссии РБ
+                                            </a>
+                                            <a href="http://www.bntu.by/upnkvk-2.html" class="basic-link"
+                                                target="_blank">
+                                                <i class="fa fa-link"></i> Управление подготовки научных кадров высшей
+                                                квалификации
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('common_files/_footer.html')
+
+    @@include('common_files/_overlay.html')
+
+    <!-- scripts -->
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

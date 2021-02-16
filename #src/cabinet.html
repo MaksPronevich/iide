@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    @@include('common_files/_head.html', {
+        "title": "Личный кабинет"
+    })
+
+<body >
+
+    @@include('common_files/_header.html')
+
+    <main>
+        <section id="cabinet" class="cabinet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-titles">
+                            <h3>Личный кабинет</h3>
+                            <div class="ln"></div>
+                            <h4>Авторизируйтесь, чтобы войти в личный кабинет</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                     <div class="col-lg-6">
+                        <div class="cabinet-description">
+                            <h1>Что такое личный кабинет?</h1>
+                            <p>
+                                <span>Личный кабинет</span> — это особый раздел сайта, который позволяет отслеживать успеваемость студента в учебном процессе.
+                            </p>
+                            <h1>Как пользоваться личным кабинетом?</h1>
+                            <ul>
+                                <li>пользователь получает от МИДО уникальные логин и пароль для авторизации;</li>
+                                <li>проходит процесс авторизации;</li>
+                                <li>получает доступ к информации.</li>
+                            </ul>
+                            <h1>Какую информацию может получить пользователь?</h1>
+                            <ul>
+                                <li>о посещаемости занятий студентов;</li>
+                                <li>о рейтинговых отметках студентов на занятиях;</li>
+                                <li>комментарий преподавателя по определенному занятию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="#" class="form-cabinet">
+                            <h1>Форма авторизации</h1>
+                            <div class="form-user-icon">
+                                <i class="fa fa-user-circle"></i>
+                            </div>
+                            <input type="text" placeholder="Введите логин" required>
+                            <input type="password" placeholder="Введите пароль" required><br>
+                            <label>
+                                <input type="checkbox" required>
+                                Я согласен на <a href="licenses_detail.html">обработку персональных данных</a>
+                            </label><br>
+                            <button type="submit">Войти</button>
+                        </form>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="countdown" class="countdown">
+            <div class="time">
+                <h5 id="days">00</h5>
+                <small>days</small>
+            </div>
+            <div class="time">
+                <h5 id="hours">00</h5>
+                <small>hours</small>
+            </div>
+            <div class="time">
+                <h5 id="minutes">00</h5>
+                <small>minutes</small>
+            </div>
+            <div class="time">
+                <h5 id="seconds">00</h5>
+                <small>seconds</small>
+            </div>
+        </div>
+        <div id="preloader" class="preloader">
+            <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+    </main>
+
+    @@include('common_files/_footer.html')
+    
+    @@include('common_files/_overlay.html')
+
+    <!-- scripts -->
+    <script src="js/app.min.js"></script>
+</body>
+</html>
+
+<!-- 
+icons:
+<i class="fa fa-download"></i> download
+<i class="fa fa-phone-square"></i> phone
+<i class="fa fa-envelope"></i> mail
+<i class="fa fa-link"></i> link
+-->
+

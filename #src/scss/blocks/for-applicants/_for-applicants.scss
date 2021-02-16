@@ -1,0 +1,48 @@
+.for-applicants-content {
+    margin-bottom: 40px;
+}
+
+.for-applicants-wrap  {
+    background-color: $gray;
+    border: 1px solid $gray-medium;
+    padding: 20px 20px 0px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+
+    @media (max-width: $lg) {
+        padding: 10px 10px 0px;
+    } 
+}
+
+.for-applicants__item {
+    border: 1px solid $gray-medium;
+    background-color: $white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    h3 {
+        font-size: 18px;
+        text-align: center;
+        color: $green;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+
+        li  {
+            padding: 5px 0px;
+
+            span {
+                color: $green;
+                font-weight: 700;
+            }
+        }
+    }   
+
+    @media (max-width: $lg) {
+        padding: 10px;
+    }
+}
