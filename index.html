@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="shortcut icon" href="img/logo-mido.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="lock-padding">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <div class="logos">
+                        <a href="http://www.bntu.by/" target="_blank">
+                            <picture><source srcset="img/header/logo_bntu.svg" type="image/webp"><img src="img/header/logo_bntu.svg" alt="BNTU"></picture>
+                        </a>
+                        <a href="#">
+                            <picture><source srcset="img/header/logo_mido.webp" type="image/webp"><img src="img/header/logo_mido.png" alt="MIDO"></picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <nav>
+                        <ul class="header-nav">
+                            <li class='header-nav__active-item'><a href="index.html">Главная</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="for-learners.html">Обучающимся</a></li>
+                            <li><a href="for-applicants.html">Абитуриентам</a></li>
+                            <li><a href="institute.html">Институт</a></li>
+                            <li><a href="graduates.html">Выпускники</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-1">
+                    <div class="header-user">
+                        <a href="#popup-warn2" class="popup-link" title="Личный кабинет">
+                            <i class="fa fa-user-circle"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-1">
+                    <div class="header-lang">
+                        <a href="#popup-warn" class="translate popup-link">
+                            <picture><source srcset="img/header/lang-en.webp" type="image/webp"><img src="img/header/lang-en.png" alt="en"></picture>
+                        </a>
+                        <a href="#popup-warn" class="translate popup-link">
+                            <picture><source srcset="img/header/lang-ru.webp" type="image/webp"><img src="img/header/lang-ru.png" alt="ru"></picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="popup-warn" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"><i class="fa fa-times"></i></a>
+                <div class="popup__content-warn">
+                    <span><i class="fa fa-exclamation-triangle"></i></span>
+                    <h3>Уважаемые студенты и преподаватели!</h3>
+                    <p>На данный момент многоязычность на сайте недоступна. Приносим извинения за доставленные неудобства.
+                    </p>
+                    <h3>Dear students and teachers!</h3>
+                    <p>At the moment, multilingualism is not available on the site. We apologize for any inconvenience
+                        caused.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-warn2" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"><i class="fa fa-times"></i></a>
+                <div class="popup__content-warn">
+                    <span><i class="fa fa-exclamation-triangle"></i></span>
+                    <h3>Уважаемые студенты и преподаватели!</h3>
+                    <p>В данный момент Личный кабинет недоступен. Приносим свои извининения за доставленные неудобства.</p>
+                    <h3>Dear students and teachers!</h3>
+                    <p>At the moment, the Personal Account is not available. We apologize for any inconvenience caused.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- home-intro -->
+        <section class="home-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-content">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="intro-description anim-items">
+                                        <h1>Международный Институт Дистанционного Образования</h1>
+                                        <p>
+                                            Обучение в МИДО БНТУ - это Ваша реальная возможность получить качественное,
+                                            признанное в мире высшее образование!
+                                        </p>
+                                        <p>
+                                            Education at BNTU IIDE - It is real opportunity to receive a quality and
+                                            recognized in the world higher education!
+                                        </p>
+                                        <a href="institute.html">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="intro-start anim-items">Начните обучение в МИДО в нашей системе дистанционного
+                            образования:
+                            <a href="https://e.bntu.by/" class="anim-link" target="_blank">
+                                <i class="fa fa-link"></i>e.bntu.by
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- home-advantages -->
+        <section class="home-advantages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-titles">
+                            <h3>Преимущества</h3>
+                            <div class="ln"></div>
+                            <h4>Почему выбирают МИДО БНТУ? </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-thumbs-o-up"></i></span>
+                            <h2>качество</h2>
+                            <p>
+                                БНТУ – Ведущий технический университет Беларуси. По данным Webometrics на январь 2020:
+                                Country Rank – 3, World Rank – 3042, Presence Rank – 753, Impact Rank – 5 242, Openness
+                                Rank – 3 018, Excellence Rank – 3 300
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-check"></i></span>
+                            <h2>квалификация преподавателей</h2>
+                            <p>
+                                У нас работают высоко квалифицированные специалисты, имеющие практический опыт в
+                                профессиональной области, более половины профессорско-преподавательского состава с
+                                учёными степенями и званиями
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span>
+                                <i class="fa fa-sign-language"></i>
+                            </span>
+                            <h2>обмен опытом</h2>
+                            <p>
+                                Сотрудники института поддерживают тесную связь со специалистами ведущих мировых
+                                университетов
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-book"></i></span>
+                            <h2>современные методики</h2>
+                            <p>
+                                При проведении учебных занятий используются современные, инновационные и интерактивные
+                                методики
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-tasks"></i></span>
+                            <h2>модульная система</h2>
+                            <p>
+                                Модульная система обучения: 4 сессии в году по 5-7 рабочих дней каждая
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-desktop"></i></span>
+                            <h2>обучение online</h2>
+                            <p>
+                                Еженедельные online и аудиторные консультации с преподавателями
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-pencil-square-o"></i></span>
+                            <h2>срок обучения</h2>
+                            <p>
+                                Срок обучения составляет от 3 лет 10 месяцев до 4 лет 10 месяцев
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-money"></i></span>
+                            <h2>гибкая система оплаты</h2>
+                            <p>
+                                Оплата обучения в 4 этапа
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-line-chart"></i></span>
+                            <h2>возможности</h2>
+                            <p>
+                                Обучение на английском языке (для иностранных граждан)
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-users"></i></span>
+                            <h2>студенческий обмен</h2>
+                            <p>
+                                Участие в совместных программах студенческого обмена
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-university"></i></span>
+                            <h2>студенческая научная работа</h2>
+                            <p>
+                                Научно-исследовательская работа и участие в научно-практических конференциях
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#" class="advantages-item anim-items">
+                            <span><i class="fa fa-briefcase"></i></span>
+                            <h2>карьерная перспектива</h2>
+                            <p>
+                                Работа в отечественных и зарубежных компаниях
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- home-reviews -->
+        <section class="home-reviews">
+            <div class="home-reviews-bg">
+                <span class="left-quote"><i class="fa fa-quote-left"></i></span>
+                <span class="right-quote"><i class="fa fa-quote-right"></i></span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-titles section-titles--white">
+                                <h3>Отзывы</h3>
+                                <div class="ln"></div>
+                                <h4>Отзывы выпускников МИДО</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="reviews-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <h3>Колтович Евгений Валерьевич</h3>
+                                            <h4>Ведущий инженер-программист</h4>
+                                            <h5>Команда профессионалов МИДО привило мне несколько важных навыков (soft
+                                                skills):
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    уважение права на ошибку и собственное мнение(как своего так и
+                                                    других);
+                                                </li>
+                                                <li>
+                                                    умение слушать и слышать, а так же понимание разницы между этими
+                                                    терминами;
+                                                </li>
+                                                <li>основы проектного и системного мышления.</li>
+                                            </ul>
+                                            <h5>В части основной программы обучения (hard skills) хотелось бы отметить
+                                                фундаментальную подготовку:</h5>
+                                            <ul>
+                                                <li>торгового оборудования;</li>
+                                                <li>построении систем и сетей;</li>
+                                                <li>основы банковского дела и теории производства.</li>
+                                            </ul>
+                                            <p>Так же хотелось выразить благодарность за человечность и поддержку!</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <h3>Каштанов Адриан Валерьевич</h3>
+                                            <h4>Зам. начальника отдела маркетинга и сбыта КУП «Минскхлебпром» хлебозавод
+                                                №6
+                                            </h4>
+                                            <p>
+                                                Я закончил МИДО БНТУ пять лет назад. Годы учебы пролетели незаметно.
+                                                Требования к студентам были довольно серьезные, так что расслабляться
+                                                было некогда. Здесь чувствовалась позитивная энергия развития, было
+                                                приятно учиться в окружении способных, креативных людей, получать знания
+                                                от педагогов высокого класса. В институте нас учили главному – мыслить.
+                                                БНТУ дает развитие своим студентам по всем направлениям, будь то учеба,
+                                                научная, творческая, общественная деятельность. Поэтому выпускник МИДО
+                                                БНТУ – это всегда успешный человек, который приобретает не только
+                                                знания, но и уверенность в себе, учится конкурировать и побеждать!
+                                            </p>
+                                            <p>
+                                                Прежде всего, хочу выразить благодарность преподавателям МИДО БНТУ за их
+                                                внимательное отношение к студентам, искреннее желание обучать и отдавать
+                                                свои знания, преподнося их легко, доступно и интересно. Спасибо за
+                                                высокое качество обучения в институте.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <h3>Курач Сергей</h3>
+                                            <h4>Учредитель ООО «Фрештим»</h4>
+                                            <p>
+                                                В потоке будничных дней часто нет времени на получение знаний. Работа,
+                                                карьера, семья и т.д. Так было и у меня. Будучи коммерческим директором
+                                                дистрибуционной компании, трудно было найти свободное время, но я уже
+                                                чувствовал, что для движения вперед необходима хорошая база по
+                                                экономическим дисциплинам и менеджменту. Отличным вариантом было
+                                                дистанционное обучение. Почти сразу был выбран БНТУ МИДО. Это обучение
+                                                без отрыва от работы, возможность учиться в удобное время, прекрасный
+                                                выбор направления и профессорско-преподавательского состава.
+                                                Успешно окончив обучение, получив достойную базу знаний и диплом
+                                                государственного образца (что немаловажно), я безгранично благодарен
+                                                БНТУ МИДО и всем, кто принимал участие в моем профессиональном
+                                                становлении.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <h3>Головач Марина Николаевна</h3>
+                                            <h4>Заместитель директора ООО «Детский Клуб Тетушки Совы»</h4>
+                                            <p>
+                                                Такая забавная история получилась, я попала в МИДО неслучайно. Его
+                                                закончил мой муж, две его сестры и моя сестра. Училась я на заочном,
+                                                успевала всё, и работать, и учиться. С подготовкой к сессии проблем не
+                                                возникало никаких. Несмотря на заочное обучение преподаватели давали
+                                                максимально возможный объём информации, подсказывали пути решения
+                                                проблем и вопросов, возникавших в процессе обучения.
+                                            </p>
+                                            <p>
+                                                Хотелось бы выразить огромную благодарность преподавательскому составу
+                                                МИДО. Здесь работают высококвалифицированные специалисты и профессора,
+                                                все профессионалы своего дела. Благодаря им выпускаются достойные и
+                                                грамотные специалисты.
+                                            </p>
+                                            <p>
+                                                Отличная, дружелюбная атмосфера, индивидуальный подход к каждому
+                                                студенту, терпение и отзывчивость в процессе обучения!
+                                            </p>
+                                            <p>
+                                                Учиться в МИДО одно удовольствие!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <h3>Мария Харук</h3>
+                                            <h4>Сотрудник БЕЛИНТЕРТРАНС</h4>
+                                            <p>
+                                                В 2016 году окончила БНТУ, факультет МИДО по специальности "экономика и
+                                                управление на предприятии".
+                                            </p>
+                                            <p>
+                                                За время учебы я приобрела не только прочные теоретически знания, но и
+                                                ценные профессиональные качества и навыки.
+                                            </p>
+                                            <p>
+                                                Перед поступлением я четко знала, что хочу учиться в одном из престижных
+                                                вузов нашей страны, поэтому мой выбор остановился на данном университете
+                                                и факультете МИДО.
+                                            </p>
+                                            <p>
+                                                Знания и навыки я получила благодаря высококвалифицированному
+                                                профессорско-преподавательскому составу. Персонал и преподавательский
+                                                состав факультета - профессионалы своего дела, которые всегда ответят на
+                                                все возникающие вопросы. Полученные знания в МИДО послужили отличным
+                                                фундаментом для дальнейшего развития в карьере. На данный момент я
+                                                работаю в БЕЛИНТЕРТРАНС.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- home-contacts -->
+        <section class="home-contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-titles">
+                            <h3>Связаться с нами</h3>
+                            <div class="ln"></div>
+                            <h4>
+                                Друзья, самый быстрый способ связаться с нами – позвонить.
+                                Также Вы можете воспользоваться формой обратной связи.
+                                Заполните поля, указанные ниже, и мы обязательно с Вами свяжемся!
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="contact-item anim-items">
+                            <h2><i class="fa fa-map-marker"></i> Наш адрес:</h2>
+                            <p>
+                                Республика Беларусь, 220114, г. Минск, ул. Ф. Скорины, 25/3 (учебный корпус БНТУ №20),
+                                кабинет 508
+                            </p>
+                        </div>
+                        <div class="contact-item anim-items">
+                            <h2><i class="fa fa-mobile"></i> Контактные телефоны:</h2>
+                            <h4>Деканат:</h4>
+                            <p>
+                                <a href="tel:+375(17)266-26-58" class="anim-link">
+                                    <i class="fa fa-phone-square"></i> +375 (17) 266-26-58
+                                </a>
+                            </p>
+                            <h4>Кафедра ИСиТ:</h4>
+                            <p>
+                                <a href="tel:+375(17)266-26-61" class="anim-link">
+                                    <i class="fa fa-phone-square"></i> +375 (17) 266-26-61
+                                </a>
+                            </p>
+                            <h4>Кафедра ИТУ:</h4>
+                            <p>
+                                <a href="tel:+375(17)267-66-84" class="anim-link">
+                                    <i class="fa fa-phone-square"></i> +375 (17) 267-66-84
+                                </a>
+                            </p>
+                        </div>
+                        <div class="contact-item anim-items">
+                            <h2><i class="fa fa-envelope-o"></i> Электронная почта:</h2>
+                            <p>
+                                <a href="mailto:mido@bntu.by" class="anim-link">
+                                    <i class="fa fa-envelope"></i> mido@bntu.by
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <iframe id="map" class="anim-items" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8c8ecf4964a3b584e6a3b9b2b0913bb0196f57094546bb7c2cb181d964745d59&amp;source=constructor">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form action="#" class="contact-form anim-items">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Введите Имя" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" placeholder="Введите email" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" id="phone" placeholder="+375 (__) ___-__-__" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <textarea placeholder="Введите текст обращения" required></textarea>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label>
+                                        <input type="checkbox" required> Я согласен на
+                                        <a href="licenses_detail.html" class="basic-link">
+                                            обработку персональных данных
+                                        </a>
+                                    </label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button value="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logos">
+                        <a href="http://www.bntu.by/" target="_blank">
+                            <picture><source srcset="img/header/logo_bntu.svg" type="image/webp"><img src="img/header/logo_bntu.svg" alt="BNTU"></picture>
+                        </a>
+                        <a href="https://mido.bntu.by/" target="_blank">
+                            <picture><source srcset="img/header/logo_mido.webp" type="image/webp"><img src="img/header/logo_mido.png" alt="MIDO"></picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 ml-auto">
+                    <div class="footer-links">
+                        <a href="https://vk.com/mido.bntu" target="_blank">
+                            <picture><source srcset="img/footer/3.webp" type="image/webp"><img src="img/footer/3.png" alt="vk"></picture>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCD1Cev8JcOBJvKkB1QyLfWg?view_as=subscriber" target="_blank">
+                            <picture><source srcset="img/footer/2.webp" type="image/webp"><img src="img/footer/2.png" alt="youtube"></picture>
+                        </a>
+                        <a href="https://web.telegram.org/#/im?p=@IIDEoficial" target="_blank">
+                            <picture><source srcset="img/footer/1.webp" type="image/webp"><img src="img/footer/1.png" alt="telegram"></picture>
+                        </a>
+
+                        <a href="https://www.instagram.com/iide_bntu/" target="_blank">
+                            <picture><source srcset="img/footer/4.webp" type="image/webp"><img src="img/footer/4.png" alt="instagram"></picture>
+                        </a>
+
+                        <a href="https://times.bntu.by/" target="_blank">
+                            <picture><source srcset="img/footer/5.webp" type="image/webp"><img src="img/footer/5.png" alt="times" style="width: 80px;"></picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-text">
+                        <h3>+375 (17) 266-26-58 – Деканат МИДО</h3>
+                        <p>© МИДО 2020 Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="container">
+            <div class="overlay-nav">
+                <div class="row">
+                    <div class="col-lg-4 block-none">
+                        <div class="overlay-nav__item">
+                            <nav class="header-nav-overlay">
+                                <ul>
+                                    <li><a href="index.html">Главная</a></li>
+                                    <li><a href="news.html">Новости</a></li>
+                                    <li><a href="for-learners.html">Обучающимся</a></li>
+                                    <li><a href="for-applicants.html">Абитуриентам</a></li>
+                                    <li><a href="institute.html">Институт</a></li>
+                                    <li><a href="graduates.html">Выпускники</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header-user header-user-menu">
+                                <a href="cabinet.html" title="Личный кабинет">
+                                    <i class="fa fa-user-circle"></i> Личный кабинет
+                                </a>
+                            </div>
+                            <div class="header-lang header-lang-menu">
+                                <a href="#popup-warn" class="translate popup-link">
+                                    <picture><source srcset="img/header/lang-en.webp" type="image/webp"><img src="img/header/lang-en.png" alt="en"></picture>
+                                </a>
+                                <a href="#popup-warn" class="translate popup-link">
+                                    <picture><source srcset="img/header/lang-ru.webp" type="image/webp"><img src="img/header/lang-ru.png" alt="ru"></picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="overlay-nav__item">
+                            <h2>Кафедры и подразделения</h2>
+                            <nav>
+                                <ul>
+                                    <li><a href="deanery.html">Деканат</a></li>
+                                    <li><a href="isit-info.html">Кафедра "Информационные системы и технологии"</a></li>
+                                    <li><a href="itu-info.html">Кафедра "Информационные технологии в управлении"</a></li>
+                                    <li><a href="sopiipup-info.html">Отдел совместных образовательных программ и
+                                            информационной поддержки учебного процесса</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="overlay-nav__item">
+                            <h2>Обучающимся</h2>
+                            <nav>
+                                <ul>
+                                    <li><a href="for-learners-students.html">Студентам</a></li>
+                                    <li><a href="for-learners-mag.html">Магистрантам</a></li>
+                                    <li><a href="for-learners-postgraduate.html">Аспирантам</a></li>
+                                    <li><a href="for-learners-foreign.html">Иностранным обучающимся</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="overlay-nav__item">
+                            <h2>Абитуриентам</h2>
+                            <nav>
+                                <ul>
+                                    <li><a href="first-stage.html">I ступень</a></li>
+                                    <li><a href="second-stage.html">II ступень (магистратура)</a></li>
+                                    <li><a href="postgraduate-stage.html">Аспирантура</a></li>
+                                    <li><a href="for-international-applicants.html">Иностранным абитуриентам</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="overlay-nav__item">
+                            <h2>Наука</h2>
+                            <nav>
+                                <ul>
+                                    <li><a href="science.html#science-main-activities">Главные направления</a></li>
+                                    <li><a href="science.html#science-conferences">Конференции</a></li>
+                                    <li><a href="science.html#science-sapi">Журнал</a></li>
+                                    <li><a href="science.html#science-seminers">Семинары</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="overlay-nav__item">
+                            <h2>Институт</h2>
+                            <nav>
+                                <ul>
+                                    <li><a href="institute.html#about">Об институте</a></li>
+                                    <li><a href="institute.html#history">История</a></li>
+                                    <li><a href="institute.html#specialtys">Специальности</a></li>
+                                    <li><a href="institute.html#smi">СМИ о МИДО</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="overlay-nav__item">
+                            <h2>Разное</h2>
+                            <nav>
+                                <ul>
+                                    <li><a href="partnership.html">Международное сотрудничество</a></li>
+                                    <li><a href="recovery.html">Восстановление</a></li>
+                                    <li><a href="info-for-employers.html">Информация для работодателей</a></li>
+                                    <li><a href="employment.html">Трудоустройство</a></li>
+                                    <li><a href="partners.html">Партнёры</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay__btn" id=""></div>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>
